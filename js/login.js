@@ -1,6 +1,6 @@
 particlesJS('particles-js', {
   particles: {
-    color: '#0D47A1',
+    color: '#f8f8f8',
     shape: 'circle',
     opacity: 1,
     size: 3,
@@ -21,6 +21,30 @@ particlesJS('particles-js', {
     anim: {
       enable: true,
       speed: 2
+    }
+  },
+  interactivity: {
+    enable: false,
+    mouse: {
+      distance: 250
+    },
+    detect_on: 'canvas', // "canvas" or "window"
+    mode: 'grab', // "grab" of false
+    line_linked: {
+      opacity: .5
+    },
+    events: {
+      onclick: {
+        enable: false,
+        mode: 'push', // "push" or "remove"
+        nb: 4
+      },
+      onresize: {
+        enable: true,
+        mode: 'out', // "out" or "bounce"
+        density_auto: false,
+        density_area: 800 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
+      }
     }
   },
   retina_detect: true

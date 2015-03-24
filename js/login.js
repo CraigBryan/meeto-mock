@@ -5,10 +5,10 @@ particlesJS('particles-js', {
     opacity: 1,
     size: 3,
     size_random: true,
-    nb: 50,
+    nb: 100,
     line_linked: {
-      enable_auto: false,
-      distance: 250,
+      enable_auto: true,
+      distance: 100,
       color: '#fff',
       opacity: 0.5,
       width: 1,
@@ -20,7 +20,7 @@ particlesJS('particles-js', {
     },
     anim: {
       enable: true,
-      speed: 2
+      speed: 1
     }
   },
   interactivity: {
@@ -41,7 +41,7 @@ particlesJS('particles-js', {
       },
       onresize: {
         enable: true,
-        mode: 'out', // "out" or "bounce"
+        mode: 'bounce', // "out" or "bounce"
         density_auto: false,
         density_area: 800 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
       }

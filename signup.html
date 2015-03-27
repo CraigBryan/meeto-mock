@@ -51,7 +51,7 @@
                   <label for="weekdayavail" class="col-sm-2 control-label">Weekday Availability</label>
                   <div class="col-sm-10">
                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#weekdaymodal">Edit</button>
-                    <label id="weekdaydisp">12:00PM to 5:30PM</label>
+                    <label id="weekdaydisp">Empty</label>
                   </div>
                 </div>
 
@@ -59,7 +59,7 @@
                   <label for="weekendavail" class="col-sm-2 control-label">Weekend Availability</label>
                   <div class="col-sm-10">
                   <button type="button" class="btn btn-default" data-toggle="modal" data-target="#weekendmodal">Edit</button>
-                  <label id="weekenddisp">12:00PM to 5:30PM</label>
+                  <label id="weekenddisp">Empty</label>
                   </div>
                 </div>
 
@@ -174,6 +174,16 @@
         </div>
     </div>
 
+    <div id="errormodal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div id="errortext" class="modal-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="particles-js"></div>
     <script src="js/particles.js" charset="utf-8"></script>
     <script src="js/login.js" charset="utf-8"></script>
@@ -198,12 +208,37 @@
     });
 
     $('form').on('submit', function () {
-         $('#submitmodal').modal('show');
-         return false;
+      var flag = false;
+      if($("#weekendstart").val() && $("#weekendend").val() && $("#weekdaystart").val() && $("#weekdayend").val() && ($("#weekendstart").val() < $("#weekendend").val()) && ($("#weekdaystart").val() < $("#weekdayend").val())){
+        $('#submitmodal').modal('show');
+      } else {
+        $('#errortext').append('<p>Please enter valid times for availability!</p>')
+        flag = true;
+      }
+
+      if($('#password').val() !== $('#conpassword').val()){
+        flag = true;
+        $('#errortext').append('<p>Please confirm your password!</p>')
+      }
+
+      if($('#email').val() !== $('#conemail').val()){
+        flag = true;
+        $('#errortext').append('<p>Please confirm your email!</p>')
+      }
+
+      if(flag){
+        $('#errormodal').modal('show');
+      }
+
+      return false;
     });
 
     $('#submitmodal').on('hidden.bs.modal', function () {
       location.href = "login.html";
+    })
+
+    $('#errormodal').on('hidden.bs.modal', function () {
+      $('#errortext').html('')
     })
     </script>
   </body>

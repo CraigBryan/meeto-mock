@@ -210,7 +210,6 @@
     $('form').on('submit', function () {
       var flag = false;
       if($("#weekendstart").val() && $("#weekendend").val() && $("#weekdaystart").val() && $("#weekdayend").val() && ($("#weekendstart").val() < $("#weekendend").val()) && ($("#weekdaystart").val() < $("#weekdayend").val())){
-        $('#submitmodal').modal('show');
       } else {
         $('#errortext').append('<p>Please enter valid times for availability!</p>')
         flag = true;
@@ -228,6 +227,8 @@
 
       if(flag){
         $('#errormodal').modal('show');
+      }else{
+        $('#submitmodal').modal('show');
       }
 
       return false;

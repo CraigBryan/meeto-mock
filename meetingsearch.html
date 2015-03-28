@@ -127,7 +127,7 @@
 
 
             $('#joinbtn').click(function() {
-              $('#submitarea').html('');
+              $('#submitarea').html('')
               $('#submitarea').append('<p><b>You have joined (Ruby on Rails on Rails).</b></p>')
               $('#submitarea').append('<p><a href="login.html">View meeting page.</a></p>')
             })
@@ -163,7 +163,7 @@
             })
 
             $('#eventmodal').on('hidden.bs.modal', function () {
-              $('#submitarea').html('<button class="btn btn-default" id="joinbtn">Join Meeting</button>')
+              $('#submitarea').html('')
             })
         });
     </script>
@@ -184,8 +184,9 @@
               <div class="clearfix"></div>
               <br>
 
-              <div class="container text-center" id="submitarea">
+              <div class="container text-center">
                 <button class="btn btn-default" id="joinbtn">Join Meeting</button>
+                <div id="submitarea"></div>
               </div>
             </div>
           </div>

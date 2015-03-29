@@ -31,6 +31,7 @@
       </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
+      <h2 class="text-center">Search</h2>
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
           <div class="panel panel-default">
@@ -105,13 +106,8 @@
           <br>
         </div>
 
-        <div class="col-xs-10 col-xs-offset-1 text-center">
-          <div class="panel panel-default">
-            <div class="panel-heading">Results</div>
-            <div class="panel-body" id="results">
+        <div class="col-xs-10 col-xs-offset-1 text-center" id="results">
 
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -133,7 +129,7 @@
             })
 
             $('#findbtn').click(function() {
-              $('#results').html("<div id='jqxCalendar'></div>")
+              $('#results').html('<div class="panel panel-default"><div class="panel-heading">Results</div><div class="panel-body"><div id="jqxCalendar"></div></div></div>')
 
               $("#jqxCalendar").jqxCalendar({ width: '250px', height: '250px', enableTooltips: true });
 
@@ -186,6 +182,8 @@
 
               <div class="container text-center">
                 <button class="btn btn-default" id="joinbtn">Join Meeting</button>
+                <div class="clearfix"></div>
+                <br>
                 <div id="submitarea"></div>
               </div>
             </div>

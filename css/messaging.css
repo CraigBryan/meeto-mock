@@ -1,0 +1,36 @@
+.navbar-brand {
+  position: relative;
+  left: 32%;
+}
+
+.msg_img {
+  height: 70px;
+  width: auto;
+}
+
+.container {
+  margin-top: 70px;
+}
+
+.btn, .btn-danger, button {
+  padding: 3px 6px 3px;
+}
+
+.prev_message {
+  margin-left: 30px;
+}
+
+.time {
+  position: absolute;
+  top: 55%;
+  left: 79%;
+}
+
+.btn, .btn-danger {
+  position: relative;
+  top: 20px;
+}
+
+h3 {
+  margin-top: 0;
+}

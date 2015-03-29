@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meeto - Search</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/meeting.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Meeto</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container col-xs-10 col-xs-offset-1">
+      <h3 style="margin-top: 0px">Lunchtime Meet</h3>
+      
+
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseOne">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Information
+              </a>
+              <span class="glyphicon glyphicon-minus collapse-icon"></span>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <p><label>Time:</label> 1:00PM - 2:30PM</p>
+              <p><label>Location:</label> 103 Slater Street, Ottawa</p>
+              <div><label>Topics:</label>
+                <span class="topic">RoR</span>
+                <span class="topic">Ruby</span>
+                <span class="topic">SW Eng.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseTwo">
+              <a class="collapsed"  data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Participants
+              </a>
+              <span class="glyphicon glyphicon-plus collapse-icon"></span>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <p><a>Dan M.</a></p>
+              <p><a>Ryan O.</a></p>
+              <p><a>Craig B.</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseThree">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Discussion
+              </a>
+              <span class="glyphicon glyphicon-plus collapse-icon"></span>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap.js"></script>
+
+    <script>
+      function toggleIcon(e) {
+        $(e.target)
+          .prev('.panel-heading')
+          .find('span.collapse-icon')
+          .toggleClass('glyphicon-plus glyphicon-minus');
+      };
+
+      $("#accordion").on('hidden.bs.collapse', toggleIcon);
+      $("#accordion").on('shown.bs.collapse', toggleIcon);
+    </script>
+
+  </body>
+</html>

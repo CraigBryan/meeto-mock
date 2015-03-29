@@ -1,0 +1,10 @@
+.topic {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #DDD;
+  padding: 1px 5px;
+}
+
+.collapse-icon {
+  float:right;
+}

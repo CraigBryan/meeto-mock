@@ -1,5 +1,5 @@
 body {
-  background-color: #03A9F4;
+  background-color: #ddd;
 }
 
 canvas {
@@ -30,7 +30,10 @@ canvas {
   top: 0;
 }
 
-#login_button {
-  background-color: #03A9F4;
-  border-color: #039BE5;
+.panel {
+  margin-bottom: 10px;
+}
+
+#sign_up {
+  margin-bottom: 5px;
 }

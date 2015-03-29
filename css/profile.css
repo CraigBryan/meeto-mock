@@ -1,0 +1,44 @@
+#top_profile {
+  text-align: center;
+}
+
+#top_profile div {
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+#top_profile img {
+  width: 100%;
+}
+
+span.edit {
+  float: right;
+}
+
+.title {
+  text-align: center;
+}
+
+.interest {
+  border: solid 1px #DDD;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 2px 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.edit-fix {
+  position: relative;
+}
+
+.edit-fix .edit {
+  position: absolute;
+  right: 0px;
+}
+
+.hr {
+  margin: 20px 0px;
+  border-bottom: 1px solid #DDD;
+}

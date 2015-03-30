@@ -8,3 +8,35 @@
 .collapse-icon {
   float:right;
 }
+
+.conv_img {
+  height: 40px;
+  width: auto;
+}
+
+.from {
+  background-color: #81D4FA;
+}
+
+.to {
+  float: right;
+  background-color: #fff;
+  border: 1px solid #DDD;
+}
+
+.to, .from {
+  padding: 5px 5px 5px;
+  margin-bottom: 5px;
+}
+
+.discussion p, .discussion strong {
+  font-size: 0.8em;
+}
+
+.discussion button {
+  width: 100%;
+}
+
+.discussion button > a {
+  color: white;
+}

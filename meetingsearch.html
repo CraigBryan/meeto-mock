@@ -163,6 +163,12 @@
             $('#eventmodal').on('hidden.bs.modal', function () {
               $('#submitarea').html('')
             })
+
+            $("#findbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#results").offset().top
+                }, 1000);
+            });
         });
     </script>
 

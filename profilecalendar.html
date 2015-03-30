@@ -79,7 +79,7 @@
 
            $('#jqxCalendar').on('change', function (event)
            {
-               if(event.args.date.getTime() == d1.getTime() || event.args.date.getTime() == d2.getTime() || event.args.date.getTime() == d3.getTime() || event.args.date.getTime() == d4.getTime()){
+               if(event.args.date.getTime() == d2.getTime() || event.args.date.getTime() == d3.getTime() || event.args.date.getTime() == d4.getTime()){
                  disp = event.args.date.toLocaleString()
                  disp = disp.split(',')
                  $('#modaldate').html(disp[0]);

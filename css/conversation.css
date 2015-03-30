@@ -39,6 +39,7 @@ strong {
 .from {
   background-color: #81D4FA;
   margin-left: 15px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
@@ -46,6 +47,7 @@ strong {
   float: right;
   background-color: #fff;
   margin-right: 15px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
@@ -90,5 +92,6 @@ strong {
 }
 
 #image {
+  -webkit-border-radius: 10px;
   border-radius: 10px;
 }

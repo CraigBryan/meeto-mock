@@ -30,10 +30,23 @@ canvas {
   top: 0;
 }
 
+#edit {
+  padding:
+}
+
 .panel {
   margin-bottom: 10px;
 }
 
 #sign_up {
   margin-bottom: 5px;
+}
+
+button {
+  background-color: #fff;
+  border:none;
+}
+
+button:active {
+  border:none;
 }

@@ -7,6 +7,11 @@ p {
   margin-bottom: 0;
 }
 
+strong {
+  color: #858585;
+  font-size: 0.8em;
+}
+
 .modal-body ul {
   list-style: none;
   padding-left: 0;
@@ -34,12 +39,14 @@ p {
 .from {
   background-color: #81D4FA;
   margin-left: 15px;
+  border-radius: 10px;
 }
 
 .to {
   float: right;
   background-color: #fff;
   margin-right: 15px;
+  border-radius: 10px;
 }
 
 .to, .from {
@@ -80,4 +87,8 @@ p {
   border-radius: 0;
   border:none;
   position: fixed;
+}
+
+#image {
+  border-radius: 10px;
 }

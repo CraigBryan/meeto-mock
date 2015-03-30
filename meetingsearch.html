@@ -24,8 +24,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
+            <li><a href="messaging.html">Messages <span class="badge">0</span><span class="sr-only">(current)</span></a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="profilecalendar.html">Calendar</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -148,7 +149,7 @@
 
               $('#jqxCalendar').on('change', function (event)
               {
-                  if(event.args.date.getTime() == d1.getTime() || event.args.date.getTime() == d2.getTime() || event.args.date.getTime() == d3.getTime() || event.args.date.getTime() == d4.getTime()){
+                  if(event.args.date.getTime() == d2.getTime() || event.args.date.getTime() == d3.getTime() || event.args.date.getTime() == d4.getTime()){
                     disp = event.args.date.toLocaleString()
                     disp = disp.split(',')
                     $('#modaldate').html(disp[0]);

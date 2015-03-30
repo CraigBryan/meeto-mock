@@ -42,3 +42,19 @@ span.edit {
   margin: 20px 0px;
   border-bottom: 1px solid #DDD;
 }
+
+.exp-input {
+  margin-bottom: 5px;
+}
+
+span.exp-input {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  z-index: 5;
+}
+
+.centered {
+  width: 100%;
+  text-align: center;
+}

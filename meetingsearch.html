@@ -151,10 +151,10 @@
               $('#jqxCalendar').on('change', function (event)
               {
                   if(event.args.date.getTime() == d2.getTime() || event.args.date.getTime() == d3.getTime() || event.args.date.getTime() == d4.getTime()){
-                    disp = event.args.date.toLocaleString()
-                    disp = disp.split(',')
+                    var disp = event.args.date.toLocaleString()
+                    disp = disp.split(' ')
                     $('#modaldate').html(disp[0]);
-                    $('#modaltime').append(disp[1])
+                    $('#modaltime').html('<b>Time: </b>' + disp[1])
                     $('#eventmodal').modal('show')
                   }
               });
@@ -162,7 +162,15 @@
 
             $('#eventmodal').on('hidden.bs.modal', function () {
               $('#submitarea').html('')
+              $('#modaldate').html('');
+              $('#modaltime').append('')
             })
+
+            $("#findbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#results").offset().top
+                }, 1000);
+            });
         });
     </script>
 
@@ -175,7 +183,7 @@
               <h4 class="text-center"><small id="modaldate"></small></h4>
             </div>
             <div class="modal-body">
-              <h4 id="modaltime"><b>Time: </b></h4>
+              <h4 id="modaltime"></h4>
               <h4><b>Location:</b> The Hidden Railway Car</h4>
               <h4><b>Topics:</b> Ruby, Ruby on Rails</h4>
 

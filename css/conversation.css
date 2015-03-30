@@ -1,0 +1,64 @@
+body {
+  background-color: #ddd;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#title {
+  position:relative;
+  top: 10px;
+  left: 10px;
+  font-size: 23px;
+}
+
+.conv_img {
+  height: 50px;
+  width: auto;
+}
+
+.from {
+  background-color: #81D4FA;
+  margin-left: 15px;
+}
+
+.to {
+  float: right;
+  background-color: #fff;
+  margin-right: 15px;
+}
+
+.to, .from {
+  padding: 5px 5px 5px;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.container .row {
+  margin-top: 10px;
+}
+
+#msg_input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  position: fixed;
+}
+
+#send_msg {
+  position: absolute;
+  top: 94.8%;
+  right: 0;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 0;
+  border:none;
+  position: fixed;
+}

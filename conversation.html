@@ -138,6 +138,7 @@
         });
 
         $("#send_msg").click(function() {
+          $("#msg_input").val('');
           if ($("#send_msg").hasClass("glyphicon-paperclip")) {
             $("#attach").modal();
           } else {
